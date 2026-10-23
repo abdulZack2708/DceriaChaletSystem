@@ -1,0 +1,1082 @@
+<!DOCTYPE html>
+<html lang="ms" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>D'Ceria Chalet | Pengkalan Balak, Melaka</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              cream: '#FAF7F2',       // Minimalist warm cream background
+              card: '#FFFFFF',        // Pure white card background
+              border: '#E8E2D9',      // Soft tactile border
+              borderDark: '#D4C9BC',
+              dark: '#1E293B',        // Deep refined slate
+              charcoal: '#0F172A',
+              muted: '#64748B',       // Muted slate text
+              accent: '#C59A6F',      // Warm coastal sand gold
+              accentHover: '#B28558',
+              accentLight: '#F5ECE1',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    /* Custom refined scrollbars */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FAF7F2;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #D4C9BC;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #B28558;
+    }
+    .soft-blur {
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+    }
+  </style>
+</head>
+<body class="bg-brand-cream text-brand-dark antialiased font-sans selection:bg-brand-accentLight selection:text-brand-dark min-h-screen flex flex-col">
+
+  <!-- MINIMALIST TOP BAR -->
+  <div class="bg-brand-dark text-slate-300 text-xs py-2.5 px-4 text-center border-b border-brand-charcoal">
+    <div class="max-w-6xl mx-auto flex items-center justify-center gap-2 tracking-wide font-normal">
+      <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+      <span>D'Ceria Chalet, Pengkalan Balak, Melaka • Terdapat Sehingga 19 Unit Chalet Berhawa Dingin & Kolam Renang</span>
+    </div>
+  </div>
+
+  <!-- NAVIGATION -->
+  <nav class="sticky top-0 z-40 bg-brand-cream/90 soft-blur border-b border-brand-border">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      
+      <!-- Logo / Title -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div class="w-10 h-10 rounded-xl bg-brand-dark flex items-center justify-center text-brand-accent font-serif font-bold text-xl group-hover:scale-105 transition-transform duration-200">
+          D
+        </div>
+        <div>
+          <span class="font-serif text-xl sm:text-2xl font-bold tracking-tight text-brand-dark block leading-none">
+            D'Ceria Chalet
+          </span>
+          <span class="text-[10px] uppercase tracking-widest text-brand-muted font-medium mt-1 block">
+            Pengkalan Balak, Melaka
+          </span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8 text-xs font-semibold uppercase tracking-wider text-brand-muted">
+        <a href="#booking-filter" class="hover:text-brand-dark transition-colors">Semak Tarikh</a>
+        <a href="#chalet-rooms" class="hover:text-brand-dark transition-colors">Pilihan Bilik (19 Unit)</a>
+        <a href="#amenities" class="hover:text-brand-dark transition-colors">Kemudahan</a>
+        <a href="#attractions" class="hover:text-brand-dark transition-colors">Tarikan Berdekatan</a>
+      </div>
+
+      <!-- Action Button -->
+      <div class="flex items-center gap-3">
+        <a href="https://wa.me/60196207865?text=Hai%20D'Ceria%20Chalet,%20saya%20ingin%20tanya%20kekosongan%20bilik%20chalet" 
+           target="_blank"
+           class="inline-flex items-center gap-2 bg-brand-dark hover:bg-slate-800 text-white px-4 sm:px-5 py-2.5 rounded-full text-xs font-medium transition duration-200">
+          <i data-lucide="message-circle" class="w-3.5 h-3.5 text-emerald-400"></i>
+          <span>Hubungi Admin</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pt-6 pb-12 w-full">
+    <div class="relative rounded-3xl overflow-hidden border border-brand-border bg-brand-charcoal min-h-[460px] sm:min-h-[520px] flex items-center shadow-xs">
+      
+      <!-- Chalet Exterior Real-look Photography with responsive fallbacks -->
+      <img src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1800&q=80" 
+           alt="D'Ceria Chalet Kolam Renang & Penginapan" 
+           class="absolute inset-0 w-full h-full object-cover opacity-65 filter saturate-90">
+      
+      <!-- Soft Gradient Overlay -->
+      <div class="absolute inset-0 bg-gradient-to-t from-brand-charcoal via-brand-charcoal/50 to-transparent"></div>
+
+      <!-- Hero Typography -->
+      <div class="relative z-10 max-w-2xl p-6 sm:p-12 text-white">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/10 soft-blur border border-white/15 text-[11px] uppercase tracking-widest text-brand-accent font-semibold mb-5">
+          <i data-lucide="waves" class="w-3.5 h-3.5"></i>
+          Chalet Tepi Pantai & Kolam Renang
+        </div>
+
+        <h1 class="font-serif text-3xl sm:text-5xl font-bold leading-[1.15] mb-4 tracking-tight">
+          Percutian Pantai & Kolam Renang Yang Menenangkan di Pengkalan Balak
+        </h1>
+
+        <p class="text-slate-200 text-sm sm:text-base leading-relaxed font-light mb-8 max-w-lg">
+          Miliki penginapan chalet yang selesa dengan 19 unit bilik pilihan. Terletak hanya beberapa langkah sahaja ke persisiran pantai Pengkalan Balak, Melaka.
+        </p>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="#booking-filter" 
+             class="inline-flex items-center gap-2 bg-brand-accent hover:bg-brand-accentHover text-brand-dark px-6 py-3 rounded-full text-xs font-bold uppercase tracking-wider transition duration-200 shadow-sm">
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+            Semak Ketersediaan Bilik
+          </a>
+          <a href="#chalet-rooms" 
+             class="inline-flex items-center gap-2 bg-white/15 hover:bg-white/25 soft-blur text-white px-5 py-3 rounded-full text-xs font-semibold transition duration-200 border border-white/20">
+            Lihat Senarai 19 Unit
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING SEARCH & FILTER BAR (Replicating exact fields from dceriachalet.com/chalet/) -->
+  <section id="booking-filter" class="max-w-6xl mx-auto px-4 sm:px-6 -mt-8 relative z-20 w-full">
+    <div class="bg-brand-card rounded-2xl p-4 sm:p-6 border border-brand-border shadow-md">
+      
+      <div class="flex items-center justify-between pb-4 mb-4 border-b border-brand-border">
+        <div>
+          <span class="text-[10px] uppercase font-bold tracking-widest text-brand-accent block">Enjin Carian Chalet</span>
+          <h2 class="font-serif text-lg sm:text-xl font-bold text-brand-dark">Tempah Bilik Chalet Anda</h2>
+        </div>
+        <div class="text-[11px] text-brand-muted hidden sm:block">
+          *Ruangan bertanda (*) wajib diisi
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 items-end">
+        
+        <!-- Check-in Field -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+            <i data-lucide="calendar" class="w-3.5 h-3.5 text-brand-accent"></i> Check-in: *
+          </label>
+          <input type="date" id="filterCheckIn" 
+                 class="w-full text-xs font-medium p-3 rounded-xl border border-brand-border bg-brand-cream/50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-brand-dark transition">
+        </div>
+
+        <!-- Check-out Field -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+            <i data-lucide="calendar-check" class="w-3.5 h-3.5 text-brand-accent"></i> Check-out: *
+          </label>
+          <input type="date" id="filterCheckOut" 
+                 class="w-full text-xs font-medium p-3 rounded-xl border border-brand-border bg-brand-cream/50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-brand-dark transition">
+        </div>
+
+        <!-- Guests Dropdown (1 to 30 Guests as on original website) -->
+        <div>
+          <label class="block text-[11px] font-bold text-slate-500 uppercase tracking-wider mb-1.5 flex items-center gap-1.5">
+            <i data-lucide="users" class="w-3.5 h-3.5 text-brand-accent"></i> Guests:
+          </label>
+          <select id="filterGuests" 
+                  class="w-full text-xs font-medium p-3 rounded-xl border border-brand-border bg-brand-cream/50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-brand-dark transition">
+            <!-- Populated via script 1 to 30 -->
+          </select>
+        </div>
+
+        <!-- Quick Filter Action -->
+        <div>
+          <button onclick="calculateAndFilter()" 
+                  class="w-full bg-brand-dark hover:bg-slate-800 text-white font-semibold text-xs py-3.5 px-4 rounded-xl transition duration-200 flex items-center justify-center gap-2 shadow-xs">
+            <i data-lucide="search" class="w-3.5 h-3.5 text-brand-accent"></i>
+            Cari Kekosongan & Kira
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Status Message / Cost Preview -->
+      <div id="bookingSummaryBar" class="mt-4 pt-4 border-t border-brand-border text-xs flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2 text-brand-muted">
+        <div>
+          <span id="bookingNightsCount" class="font-bold text-brand-dark">1 Malam</span> dipilih • Sila pilih bilik di bawah untuk pengesahan WhatsApp rasmi.
+        </div>
+        <div id="rateStatusNotice" class="text-[11px] font-semibold text-brand-accent">
+          Kadar: Hari Biasa (Ahad - Khamis) / Weekend (Jumaat - Sabtu)
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ROOM TYPES FILTER TABS (Directly replicating the categories on https://dceriachalet.com/chalet/) -->
+  <section id="chalet-rooms" class="max-w-6xl mx-auto px-4 sm:px-6 pt-16 pb-6 w-full">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+      <div>
+        <span class="text-[11px] font-bold uppercase tracking-widest text-brand-accent block">Katalog Rasmi</span>
+        <h2 class="font-serif text-3xl font-bold text-brand-dark mt-1">Pilihan Unit Chalet (19 Unit)</h2>
+      </div>
+      <p class="text-xs text-brand-muted max-w-md">
+        Setiap bilik chalet dilengkapi penghawa dingin, TV LED 32", dan bilik air peribadi dengan akses kolam renang percuma.
+      </p>
+    </div>
+
+    <!-- Category Filter Tabs -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-2 border-b border-brand-border" id="categoryTabs">
+      <button onclick="setCategoryFilter('all')" 
+              data-cat="all"
+              class="cat-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition whitespace-nowrap bg-brand-dark text-white">
+        All Rooms (19 Unit)
+      </button>
+      <button onclick="setCategoryFilter('cabin')" 
+              data-cat="cabin"
+              class="cat-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition whitespace-nowrap bg-transparent text-slate-600 hover:text-brand-dark hover:bg-brand-border/40">
+        Cabin Room (12 Units)
+      </button>
+      <button onclick="setCategoryFilter('deluxe-standard')" 
+              data-cat="deluxe-standard"
+              class="cat-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition whitespace-nowrap bg-transparent text-slate-600 hover:text-brand-dark hover:bg-brand-border/40">
+        Deluxe Room Chalet (3 Units)
+      </button>
+      <button onclick="setCategoryFilter('superior')" 
+              data-cat="superior"
+              class="cat-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition whitespace-nowrap bg-transparent text-slate-600 hover:text-brand-dark hover:bg-brand-border/40">
+        Superior Room (3 Units)
+      </button>
+      <button onclick="setCategoryFilter('deluxe-seaview')" 
+              data-cat="deluxe-seaview"
+              class="cat-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition whitespace-nowrap bg-transparent text-slate-600 hover:text-brand-dark hover:bg-brand-border/40">
+        Deluxe Seaview (1 Unit)
+      </button>
+    </div>
+  </section>
+
+  <!-- ROOMS GRID LIST -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-20 w-full">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="roomsList">
+
+      <!-- 1. CABIN ROOM (POOL VIEW - 12 UNITS) -->
+      <article class="room-item bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col group transition hover:border-brand-borderDark shadow-xs" data-category="cabin">
+        <div class="relative h-64 sm:h-72 bg-slate-100 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1000&q=80" 
+               alt="D'Ceria Cabin Room - Pool View" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute top-3 left-3 flex items-center gap-2">
+            <span class="bg-brand-dark/85 soft-blur text-white text-[10px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+              12 Units Available
+            </span>
+            <span class="bg-brand-accent/90 soft-blur text-brand-dark text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Pool View
+            </span>
+          </div>
+
+          <button onclick="openGalleryModal('cabin')" 
+                  class="absolute bottom-3 right-3 bg-white/90 soft-blur text-brand-dark hover:bg-white text-[11px] font-semibold px-3 py-1.5 rounded-xl shadow-xs flex items-center gap-1.5 transition">
+            <i data-lucide="image" class="w-3.5 h-3.5 text-brand-accent"></i>
+            Galeri Bilik
+          </button>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-brand-accent">Categories: Cabin Room</span>
+                <h3 class="font-serif text-2xl font-bold text-brand-dark mt-0.5">D'Ceria Cabin Room</h3>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="text-[10px] text-slate-400 block uppercase">Prices start at</span>
+                <span class="text-2xl font-bold text-brand-dark leading-tight">RM110</span>
+                <span class="text-[11px] text-slate-500">/ night</span>
+              </div>
+            </div>
+
+            <!-- Exact Specs -->
+            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-brand-border text-slate-600 mb-4 bg-brand-cream/40 p-3 rounded-xl">
+              <div><strong class="text-brand-dark">🛏 Bed Type:</strong> 1 Queen Bed</div>
+              <div><strong class="text-brand-dark">👥 Guests:</strong> 2 (Max 2 Adults & 2 Kids @ 3 Adults)</div>
+              <div><strong class="text-brand-dark">👁 View:</strong> Swimming Pool</div>
+              <div><strong class="text-brand-dark">❄ Aircond:</strong> 1 Unit Aircond</div>
+              <div><strong class="text-brand-dark">📺 Entertainment:</strong> 1 Unit 32″ LED TV</div>
+              <div><strong class="text-brand-dark">☕ Minuman:</strong> Kopi & Teh Percuma</div>
+            </div>
+
+            <!-- Rates breakdown table -->
+            <div class="space-y-1.5 text-xs mb-6 text-slate-600">
+              <div class="flex justify-between py-1 border-b border-brand-border/60">
+                <span>Weekday (Ahad – Khamis):</span>
+                <span class="font-bold text-brand-dark">RM 110 / malam</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-brand-border/60">
+                <span>Weekend (Jumaat & Sabtu):</span>
+                <span class="font-bold text-brand-dark">RM 150 / malam</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span>Public Holiday / Peak Season:</span>
+                <span class="font-bold text-brand-accent">RM 160 / malam</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Reservation Trigger -->
+          <div class="flex items-center gap-3">
+            <button onclick="prepareBooking('D\'Ceria Cabin Room (Pool View)', 110, 150, 160)" 
+                    class="flex-1 bg-brand-dark hover:bg-slate-800 text-white font-semibold text-xs py-3 rounded-xl transition duration-200 flex items-center justify-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-accent"></i>
+              Tempah Bilik Ini Sekarang
+            </button>
+            <a href="https://wa.me/60196207865?text=Hai%20D'Ceria%20Chalet,%20saya%20berminat%20dengan%20Cabin%20Room%20(Pool%20View)" 
+               target="_blank" 
+               class="p-3 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 transition" 
+               title="Tanya Admin di WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2. DELUXE ROOM (STANDARD - 3 UNITS) -->
+      <article class="room-item bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col group transition hover:border-brand-borderDark shadow-xs" data-category="deluxe-standard">
+        <div class="relative h-64 sm:h-72 bg-slate-100 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1000&q=80" 
+               alt="D'Ceria Deluxe Room Standard" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute top-3 left-3 flex items-center gap-2">
+            <span class="bg-brand-dark/85 soft-blur text-white text-[10px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+              3 Units Available
+            </span>
+            <span class="bg-brand-border/90 soft-blur text-brand-dark text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Standard
+            </span>
+          </div>
+
+          <button onclick="openGalleryModal('deluxe')" 
+                  class="absolute bottom-3 right-3 bg-white/90 soft-blur text-brand-dark hover:bg-white text-[11px] font-semibold px-3 py-1.5 rounded-xl shadow-xs flex items-center gap-1.5 transition">
+            <i data-lucide="image" class="w-3.5 h-3.5 text-brand-accent"></i>
+            Galeri Bilik
+          </button>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-brand-accent">Categories: Deluxe Room Chalet</span>
+                <h3 class="font-serif text-2xl font-bold text-brand-dark mt-0.5">D'Ceria Deluxe Room</h3>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="text-[10px] text-slate-400 block uppercase">Prices start at</span>
+                <span class="text-2xl font-bold text-brand-dark leading-tight">RM140</span>
+                <span class="text-[11px] text-slate-500">/ night</span>
+              </div>
+            </div>
+
+            <!-- Exact Specs -->
+            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-brand-border text-slate-600 mb-4 bg-brand-cream/40 p-3 rounded-xl">
+              <div><strong class="text-brand-dark">🛏 Bed Type:</strong> 1 Queen + 1 Single Bed</div>
+              <div><strong class="text-brand-dark">👥 Guests:</strong> 2-4 (Max 3 Adults 2 Kids @ 4 Adults)</div>
+              <div><strong class="text-brand-dark">🏊 Kolam Mandi:</strong> Kolam Dewasa & Kanak-kanak</div>
+              <div><strong class="text-brand-dark">❄ Aircond:</strong> 1 Unit Aircond</div>
+              <div><strong class="text-brand-dark">📺 Entertainment:</strong> 1 Unit 32″ LED TV</div>
+              <div><strong class="text-brand-dark">👔 Kemudahan:</strong> Seterika Atas Permintaan</div>
+            </div>
+
+            <!-- Rates breakdown table -->
+            <div class="space-y-1.5 text-xs mb-6 text-slate-600">
+              <div class="flex justify-between py-1 border-b border-brand-border/60">
+                <span>Weekday (Ahad – Khamis):</span>
+                <span class="font-bold text-brand-dark">RM 140 / malam</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-brand-border/60">
+                <span>Weekend (Jumaat & Sabtu):</span>
+                <span class="font-bold text-brand-dark">RM 180 / malam</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span>Public Holiday / Peak Season:</span>
+                <span class="font-bold text-brand-accent">RM 190 / malam</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Reservation Trigger -->
+          <div class="flex items-center gap-3">
+            <button onclick="prepareBooking('D\'Ceria Deluxe Room (Standard)', 140, 180, 190)" 
+                    class="flex-1 bg-brand-dark hover:bg-slate-800 text-white font-semibold text-xs py-3 rounded-xl transition duration-200 flex items-center justify-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-accent"></i>
+              Tempah Bilik Ini Sekarang
+            </button>
+            <a href="https://wa.me/60196207865?text=Hai%20D'Ceria%20Chalet,%20saya%20berminat%20dengan%20Deluxe%20Room" 
+               target="_blank" 
+               class="p-3 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 transition" 
+               title="Tanya Admin di WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3. SUPERIOR ROOM (SEAVIEW - 3 UNITS) -->
+      <article class="room-item bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col group transition hover:border-brand-borderDark shadow-xs" data-category="superior">
+        <div class="relative h-64 sm:h-72 bg-slate-100 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1000&q=80" 
+               alt="D'Ceria Superior Room - Seaview" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute top-3 left-3 flex items-center gap-2">
+            <span class="bg-brand-dark/85 soft-blur text-white text-[10px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+              3 Units Available
+            </span>
+            <span class="bg-cyan-700/90 soft-blur text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Seaview
+            </span>
+          </div>
+
+          <button onclick="openGalleryModal('superior')" 
+                  class="absolute bottom-3 right-3 bg-white/90 soft-blur text-brand-dark hover:bg-white text-[11px] font-semibold px-3 py-1.5 rounded-xl shadow-xs flex items-center gap-1.5 transition">
+            <i data-lucide="image" class="w-3.5 h-3.5 text-brand-accent"></i>
+            Galeri Bilik
+          </button>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-brand-accent">Categories: Superior Room</span>
+                <h3 class="font-serif text-2xl font-bold text-brand-dark mt-0.5">D'Ceria Superior Room</h3>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="text-[10px] text-slate-400 block uppercase">Prices start at</span>
+                <span class="text-2xl font-bold text-brand-dark leading-tight">RM190</span>
+                <span class="text-[11px] text-slate-500">/ night</span>
+              </div>
+            </div>
+
+            <!-- Exact Specs -->
+            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-brand-border text-slate-600 mb-4 bg-brand-cream/40 p-3 rounded-xl">
+              <div><strong class="text-brand-dark">🛏 Bed Type:</strong> 2 Units Queen Beds</div>
+              <div><strong class="text-brand-dark">👥 Guests:</strong> 4 (Max 4 Adults 2 Kids @ 5 Adults)</div>
+              <div><strong class="text-brand-dark">👁 View:</strong> Seaview</div>
+              <div><strong class="text-brand-dark">❄ Aircond:</strong> 1 Unit Aircond</div>
+              <div><strong class="text-brand-dark">📺 Entertainment:</strong> 1 Unit 32″ LED TV</div>
+              <div><strong class="text-brand-dark">📶 Internet:</strong> Wi-Fi Percuma</div>
+            </div>
+
+            <!-- Rates breakdown table -->
+            <div class="space-y-1.5 text-xs mb-6 text-slate-600">
+              <div class="flex justify-between py-1 border-b border-brand-border/60">
+                <span>Weekday (Ahad – Khamis):</span>
+                <span class="font-bold text-brand-dark">RM 190 / malam</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-brand-border/60">
+                <span>Weekend (Jumaat & Sabtu):</span>
+                <span class="font-bold text-brand-dark">RM 230 / malam</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span>Public Holiday / Peak Season:</span>
+                <span class="font-bold text-brand-accent">RM 240 / malam</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Reservation Trigger -->
+          <div class="flex items-center gap-3">
+            <button onclick="prepareBooking('D\'Ceria Superior Room (Seaview)', 190, 230, 240)" 
+                    class="flex-1 bg-brand-dark hover:bg-slate-800 text-white font-semibold text-xs py-3 rounded-xl transition duration-200 flex items-center justify-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-accent"></i>
+              Tempah Bilik Ini Sekarang
+            </button>
+            <a href="https://wa.me/60196207865?text=Hai%20D'Ceria%20Chalet,%20saya%20berminat%20dengan%20Superior%20Room%20(Seaview)" 
+               target="_blank" 
+               class="p-3 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 transition" 
+               title="Tanya Admin di WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4. DELUXE SEAVIEW ROOM (1 UNIT) -->
+      <article class="room-item bg-brand-card rounded-2xl overflow-hidden border border-brand-border flex flex-col group transition hover:border-brand-borderDark shadow-xs" data-category="deluxe-seaview">
+        <div class="relative h-64 sm:h-72 bg-slate-100 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1000&q=80" 
+               alt="D'Ceria Deluxe Seaview Room" 
+               class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+          
+          <div class="absolute top-3 left-3 flex items-center gap-2">
+            <span class="bg-brand-dark/85 soft-blur text-white text-[10px] font-semibold px-3 py-1 rounded-full uppercase tracking-wider">
+              1 Exclusive Unit
+            </span>
+            <span class="bg-cyan-700/90 soft-blur text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">
+              Sea View
+            </span>
+          </div>
+
+          <button onclick="openGalleryModal('deluxe-seaview')" 
+                  class="absolute bottom-3 right-3 bg-white/90 soft-blur text-brand-dark hover:bg-white text-[11px] font-semibold px-3 py-1.5 rounded-xl shadow-xs flex items-center gap-1.5 transition">
+            <i data-lucide="image" class="w-3.5 h-3.5 text-brand-accent"></i>
+            Galeri Bilik
+          </button>
+        </div>
+
+        <div class="p-6 flex-1 flex flex-col justify-between">
+          <div>
+            <div class="flex items-start justify-between gap-4 mb-2">
+              <div>
+                <span class="text-[10px] font-bold uppercase tracking-widest text-brand-accent">Categories: Deluxe Seaview Room</span>
+                <h3 class="font-serif text-2xl font-bold text-brand-dark mt-0.5">D'Ceria Deluxe Seaview</h3>
+              </div>
+              <div class="text-right shrink-0">
+                <span class="text-[10px] text-slate-400 block uppercase">Prices start at</span>
+                <span class="text-2xl font-bold text-brand-dark leading-tight">RM140</span>
+                <span class="text-[11px] text-slate-500">/ night</span>
+              </div>
+            </div>
+
+            <!-- Exact Specs -->
+            <div class="grid grid-cols-2 gap-2 text-xs py-3 border-y border-brand-border text-slate-600 mb-4 bg-brand-cream/40 p-3 rounded-xl">
+              <div><strong class="text-brand-dark">🛏 Bed Type:</strong> 1 Queen + 1 Single Bed</div>
+              <div><strong class="text-brand-dark">👥 Guests:</strong> 2 (Max 3 Adults 2 Kids @ 4 Adults)</div>
+              <div><strong class="text-brand-dark">👁 View:</strong> Seaview Direct</div>
+              <div><strong class="text-brand-dark">❄ Aircond:</strong> 1 Unit Aircond</div>
+              <div><strong class="text-brand-dark">📺 Entertainment:</strong> 1 Unit 32″ LED TV</div>
+              <div><strong class="text-brand-dark">🏊 Kolam:</strong> Akses Kolam Percuma</div>
+            </div>
+
+            <!-- Rates breakdown table -->
+            <div class="space-y-1.5 text-xs mb-6 text-slate-600">
+              <div class="flex justify-between py-1 border-b border-brand-border/60">
+                <span>Weekday (Ahad – Khamis):</span>
+                <span class="font-bold text-brand-dark">RM 140 / malam</span>
+              </div>
+              <div class="flex justify-between py-1 border-b border-brand-border/60">
+                <span>Weekend (Jumaat & Sabtu):</span>
+                <span class="font-bold text-brand-dark">RM 180 / malam</span>
+              </div>
+              <div class="flex justify-between py-1">
+                <span>Public Holiday / Peak Season:</span>
+                <span class="font-bold text-brand-accent">RM 190 / malam</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Direct Reservation Trigger -->
+          <div class="flex items-center gap-3">
+            <button onclick="prepareBooking('D\'Ceria Deluxe Seaview Room', 140, 180, 190)" 
+                    class="flex-1 bg-brand-dark hover:bg-slate-800 text-white font-semibold text-xs py-3 rounded-xl transition duration-200 flex items-center justify-center gap-2">
+              <i data-lucide="check-circle" class="w-4 h-4 text-brand-accent"></i>
+              Tempah Bilik Ini Sekarang
+            </button>
+            <a href="https://wa.me/60196207865?text=Hai%20D'Ceria%20Chalet,%20saya%20berminat%20dengan%20Deluxe%20Seaview%20Room" 
+               target="_blank" 
+               class="p-3 bg-emerald-50 hover:bg-emerald-100 text-emerald-700 rounded-xl border border-emerald-200 transition" 
+               title="Tanya Admin di WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- AMENITIES (Replicating exact list from dceriachalet.com/chalet/) -->
+  <section id="amenities" class="border-y border-brand-border bg-brand-card py-16">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-brand-accent block">Kemudahan Lengkap Penginapan</span>
+        <h2 class="font-serif text-3xl font-bold text-brand-dark mt-1">Kemudahan Disediakan Untuk Setiap Tetamu</h2>
+        <p class="text-xs text-brand-muted mt-2">
+          Semua kemudahan asas yang disenaraikan disediakan secara percuma sepanjang tempoh penginapan anda di D'Ceria Chalet.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 text-center">
+        
+        <div class="p-4 rounded-2xl bg-brand-cream/60 border border-brand-border flex flex-col items-center">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark text-brand-accent flex items-center justify-center mb-3">
+            <i data-lucide="waves" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-brand-dark">Kolam Mandi</h4>
+          <p class="text-[11px] text-brand-muted mt-1">Berasingan dewasa & kanak-kanak</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-brand-cream/60 border border-brand-border flex flex-col items-center">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark text-brand-accent flex items-center justify-center mb-3">
+            <i data-lucide="coffee" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-brand-dark">Kopi & Teh</h4>
+          <p class="text-[11px] text-brand-muted mt-1">Disediakan percuma dalam bilik</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-brand-cream/60 border border-brand-border flex flex-col items-center">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark text-brand-accent flex items-center justify-center mb-3">
+            <i data-lucide="sparkles" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-brand-dark">Seterika</h4>
+          <p class="text-[11px] text-brand-muted mt-1">Tersedia atas permintaan</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-brand-cream/60 border border-brand-border flex flex-col items-center">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark text-brand-accent flex items-center justify-center mb-3">
+            <i data-lucide="wifi" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-brand-dark">Wi-Fi Percuma</h4>
+          <p class="text-[11px] text-brand-muted mt-1">Akses internet berkelajuan tinggi</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-brand-cream/60 border border-brand-border flex flex-col items-center">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark text-brand-accent flex items-center justify-center mb-3">
+            <i data-lucide="wind" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-brand-dark">Penghawa Dingin</h4>
+          <p class="text-[11px] text-brand-muted mt-1">1 unit aircond setiap chalet</p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-brand-cream/60 border border-brand-border flex flex-col items-center">
+          <div class="w-12 h-12 rounded-xl bg-brand-dark text-brand-accent flex items-center justify-center mb-3">
+            <i data-lucide="tv" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-bold text-xs text-brand-dark">32″ LED TV</h4>
+          <p class="text-[11px] text-brand-muted mt-1">Saluran televisyen tempatan</p>
+        </div>
+
+      </div>
+
+      <!-- Additional Rental Items from policy -->
+      <div class="mt-8 p-4 rounded-2xl bg-brand-accentLight/60 border border-brand-border flex flex-col sm:flex-row items-center justify-between text-xs gap-3">
+        <div class="flex items-center gap-2 text-brand-dark">
+          <i data-lucide="flame" class="w-4 h-4 text-brand-accent"></i>
+          <span><strong>Kemudahan Tambahan:</strong> Sewa Set Mobile BBQ (RM30) • Sewa Khemah 10x10 + Meja Kerusi (RM30) • Tilam Tambahan (RM15/unit)</span>
+        </div>
+        <span class="text-[11px] text-brand-muted font-medium">Boleh ditambah semasa pendaftaran bilik</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- NEARBY ATTRACTIONS (Exact list & minutes replicated from dceriachalet.com/chalet/) -->
+  <section id="attractions" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 w-full">
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-3">
+      <div>
+        <span class="text-[11px] font-bold uppercase tracking-widest text-brand-accent block">Lokasi & Rekreasi</span>
+        <h2 class="font-serif text-3xl font-bold text-brand-dark mt-1">Nearby Attractions (Tarikan Berdekatan)</h2>
+      </div>
+      <p class="text-xs text-brand-muted max-w-sm">
+        Jarak masa perjalanan santai dari D'Ceria Chalet ke pelbagai tarikan utama dan institusi di Melaka.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+      
+      <!-- 1 -->
+      <div class="bg-brand-card p-4 rounded-2xl border border-brand-border flex items-start gap-3.5 hover:border-brand-borderDark transition">
+        <div class="w-10 h-10 rounded-xl bg-brand-cream flex items-center justify-center text-brand-accent font-bold shrink-0 text-xs">
+          2m
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold text-brand-accent block">2 minit</span>
+          <h4 class="font-bold text-xs text-brand-dark">Pusat Konservasi & Penerangan Penyu</h4>
+          <p class="text-[11px] text-brand-muted">Padang Kemunting, Melaka</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="bg-brand-card p-4 rounded-2xl border border-brand-border flex items-start gap-3.5 hover:border-brand-borderDark transition">
+        <div class="w-10 h-10 rounded-xl bg-brand-cream flex items-center justify-center text-brand-accent font-bold shrink-0 text-xs">
+          5m
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold text-brand-accent block">5 minit</span>
+          <h4 class="font-bold text-xs text-brand-dark">Al Khawarizmi, Melaka</h4>
+          <p class="text-[11px] text-brand-muted">Kompleks Falak Tanjung Bidara</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="bg-brand-card p-4 rounded-2xl border border-brand-border flex items-start gap-3.5 hover:border-brand-borderDark transition">
+        <div class="w-10 h-10 rounded-xl bg-brand-cream flex items-center justify-center text-brand-accent font-bold shrink-0 text-xs">
+          5m
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold text-brand-accent block">5 minit</span>
+          <h4 class="font-bold text-xs text-brand-dark">Matrix Londang</h4>
+          <p class="text-[11px] text-brand-muted">Kolej Matrikulasi Melaka</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="bg-brand-card p-4 rounded-2xl border border-brand-border flex items-start gap-3.5 hover:border-brand-borderDark transition">
+        <div class="w-10 h-10 rounded-xl bg-brand-cream flex items-center justify-center text-brand-accent font-bold shrink-0 text-xs">
+          5m
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold text-brand-accent block">5 minit</span>
+          <h4 class="font-bold text-xs text-brand-dark">Powertek</h4>
+          <p class="text-[11px] text-brand-muted">Stesen Janakuasa Telok Gong</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="bg-brand-card p-4 rounded-2xl border border-brand-border flex items-start gap-3.5 hover:border-brand-borderDark transition">
+        <div class="w-10 h-10 rounded-xl bg-brand-cream flex items-center justify-center text-brand-accent font-bold shrink-0 text-xs">
+          7m
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold text-brand-accent block">7 minit</span>
+          <h4 class="font-bold text-xs text-brand-dark">MRSM Terendak Kem</h4>
+          <p class="text-[11px] text-brand-muted">Kem Angkatan Tentera Malaysia</p>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="bg-brand-card p-4 rounded-2xl border border-brand-border flex items-start gap-3.5 hover:border-brand-borderDark transition">
+        <div class="w-10 h-10 rounded-xl bg-brand-cream flex items-center justify-center text-brand-accent font-bold shrink-0 text-xs">
+          15m
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold text-brand-accent block">15 minit</span>
+          <h4 class="font-bold text-xs text-brand-dark">UNIMEL</h4>
+          <p class="text-[11px] text-brand-muted">Universiti Melaka (KUIM)</p>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="bg-brand-card p-4 rounded-2xl border border-brand-border flex items-start gap-3.5 hover:border-brand-borderDark transition">
+        <div class="w-10 h-10 rounded-xl bg-brand-cream flex items-center justify-center text-brand-accent font-bold shrink-0 text-xs">
+          18m
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold text-brand-accent block">18 minit</span>
+          <h4 class="font-bold text-xs text-brand-dark">Akademi Laut Malaysia (ALAM)</h4>
+          <p class="text-[11px] text-brand-muted">Kuala Sungai Baru</p>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="bg-brand-card p-4 rounded-2xl border border-brand-border flex items-start gap-3.5 hover:border-brand-borderDark transition">
+        <div class="w-10 h-10 rounded-xl bg-brand-cream flex items-center justify-center text-brand-accent font-bold shrink-0 text-xs">
+          20m
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold text-brand-accent block">20 minit</span>
+          <h4 class="font-bold text-xs text-brand-dark">KKTM Paya Lebar</h4>
+          <p class="text-[11px] text-brand-muted">Kolej Kemahiran Tinggi MARA</p>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="bg-brand-card p-4 rounded-2xl border border-brand-border flex items-start gap-3.5 hover:border-brand-borderDark transition">
+        <div class="w-10 h-10 rounded-xl bg-brand-cream flex items-center justify-center text-brand-accent font-bold shrink-0 text-xs">
+          20m
+        </div>
+        <div>
+          <span class="text-[10px] uppercase font-bold text-brand-accent block">20 minit</span>
+          <h4 class="font-bold text-xs text-brand-dark">UiTM Lendu</h4>
+          <p class="text-[11px] text-brand-muted">Kampus Alor Gajah, Melaka</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT & POLICY SUMMARY (From original site) -->
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 pb-16 w-full">
+    <div class="bg-brand-card rounded-3xl p-6 sm:p-10 border border-brand-border flex flex-col md:flex-row items-center justify-between gap-8">
+      <div class="max-w-xl">
+        <span class="text-[11px] font-bold uppercase tracking-widest text-brand-accent block">Tentang Kami</span>
+        <h3 class="font-serif text-2xl font-bold text-brand-dark mt-1">Selamat Datang ke D'Ceria Chalet</h3>
+        <p class="text-xs text-slate-600 mt-3 leading-relaxed">
+          Tempat percutian anda yang terletak hanya beberapa langkah sahaja untuk ke pantai Pengkalan Balak. Dengan 19 unit yang ada, kami berharap dapat memenuhi keperluan keluarga, pasangan, dan pengembara solo yang mencari percutian santai di tepi laut.
+        </p>
+        <div class="flex items-center gap-6 mt-4 text-xs font-semibold text-brand-dark">
+          <div><i data-lucide="clock" class="w-3.5 h-3.5 inline text-brand-accent mr-1"></i> Check-in: 3.00 PM</div>
+          <div><i data-lucide="clock" class="w-3.5 h-3.5 inline text-brand-accent mr-1"></i> Check-out: 12.00 PM</div>
+        </div>
+      </div>
+      <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+        <a href="https://maps.google.com/?q=D'Ceria+Chalet+Pengkalan+Balak" target="_blank"
+           class="inline-flex items-center justify-center gap-2 bg-brand-dark hover:bg-slate-800 text-white px-5 py-3 rounded-xl text-xs font-semibold transition">
+          <i data-lucide="map-pin" class="w-4 h-4 text-brand-accent"></i>
+          Google Maps
+        </a>
+        <a href="https://waze.com/ul?q=D'Ceria+Chalet+Pengkalan+Balak" target="_blank"
+           class="inline-flex items-center justify-center gap-2 bg-brand-cream hover:bg-brand-border text-brand-dark border border-brand-border px-5 py-3 rounded-xl text-xs font-semibold transition">
+          <i data-lucide="navigation" class="w-4 h-4 text-brand-accent"></i>
+          Waze Navigation
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER (Matching copyright & links from dceriachalet.com) -->
+  <footer class="mt-auto bg-brand-charcoal text-slate-400 py-12 text-xs border-t border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-6 pb-8 border-b border-slate-800">
+        <div>
+          <span class="font-serif text-white font-bold text-xl block">D'Ceria Chalet</span>
+          <span class="text-[11px] text-slate-400">Pengkalan Balak, Melaka • Terdapat Sehingga 19 Unit Chalet</span>
+        </div>
+        <div class="flex flex-wrap gap-6 text-xs text-slate-300">
+          <a href="#" class="hover:text-white transition">Tentang Kami</a>
+          <a href="https://dceriachalet.com/syarat-tempahan/" target="_blank" class="hover:text-white transition">Syarat Tempahan</a>
+          <a href="#chalet-rooms" class="hover:text-white transition">Chalet By Room Types</a>
+          <a href="https://dceriachalet.com" target="_blank" class="hover:text-white transition">Laman Asal (dceriachalet.com)</a>
+        </div>
+      </div>
+      <div class="pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-slate-500 text-[11px]">
+        <div>
+          D'Ceria Chalet, Pengkalan Balak, Melaka © 2026. Hak Cipta Terpelihara.
+        </div>
+        <div>
+          Minimalist Luxury Edition • Selesa & Tenang
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON (Persistent Contact) -->
+  <a id="floatingWhatsAppBtn"
+     href="https://wa.me/60196207865?text=Hai%20D'Ceria%20Chalet,%20saya%20ingin%20tanya%20kekosongan%20bilik%20chalet" 
+     target="_blank" 
+     class="fixed bottom-6 right-6 z-50 bg-emerald-600 hover:bg-emerald-700 text-white p-3.5 rounded-full shadow-lg transition duration-200 flex items-center justify-center group"
+     title="Tanya Admin di WhatsApp">
+    <i data-lucide="message-circle" class="w-6 h-6"></i>
+    <span class="max-w-0 overflow-hidden whitespace-nowrap group-hover:max-w-xs transition-all duration-300 ease-in-out text-xs font-bold pl-0 group-hover:pl-2">
+      WhatsApp Admin
+    </span>
+  </a>
+
+  <!-- LIGHTBOX GALLERY MODAL -->
+  <div id="galleryModal" class="fixed inset-0 z-50 bg-brand-charcoal/90 soft-blur hidden items-center justify-center p-4">
+    <div class="relative max-w-4xl w-full bg-brand-card rounded-2xl overflow-hidden border border-brand-border shadow-2xl flex flex-col">
+      <div class="p-4 border-b border-brand-border flex items-center justify-between">
+        <h3 id="galleryTitle" class="font-serif font-bold text-sm text-brand-dark">Galeri D'Ceria Chalet</h3>
+        <button onclick="closeGalleryModal()" class="text-slate-400 hover:text-brand-dark p-1 rounded-lg">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+      <div class="p-4 bg-brand-cream flex items-center justify-center min-h-[320px]">
+        <img id="galleryMainImage" src="" alt="Pratonton Chalet" class="max-h-[60vh] max-w-full object-contain rounded-xl shadow-xs">
+      </div>
+      <div class="p-4 border-t border-brand-border flex items-center justify-between text-xs text-brand-muted">
+        <span id="galleryCaption">D'Ceria Chalet, Pengkalan Balak Melaka</span>
+        <button onclick="closeGalleryModal()" class="bg-brand-dark text-white px-4 py-2 rounded-xl text-xs font-semibold">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT LOGIC -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Populate Guests Dropdown (1 to 30) exactly as found on https://dceriachalet.com/chalet/
+    const guestsSelect = document.getElementById('filterGuests');
+    for (let i = 1; i <= 30; i++) {
+      const option = document.createElement('option');
+      option.value = i;
+      option.textContent = `${i} ${i === 1 ? 'Tetamu / Guest' : 'Tetamu / Guests'}`;
+      if (i === 2) option.selected = true; // default 2
+      guestsSelect.appendChild(option);
+    }
+
+    // Default dates setup (Tomorrow and Day After)
+    const today = new Date();
+    const tomorrow = new Date(today);
+    tomorrow.setDate(tomorrow.getDate() + 1);
+    const dayAfter = new Date(tomorrow);
+    dayAfter.setDate(dayAfter.getDate() + 1);
+
+    const formatISO = (d) => d.toISOString().split('T')[0];
+
+    const checkInInput = document.getElementById('filterCheckIn');
+    const checkOutInput = document.getElementById('filterCheckOut');
+
+    checkInInput.min = formatISO(today);
+    checkInInput.value = formatISO(tomorrow);
+    checkOutInput.min = formatISO(tomorrow);
+    checkOutInput.value = formatISO(dayAfter);
+
+    // Calculate nights & update status
+    function calculateAndFilter() {
+      const inDate = new Date(checkInInput.value);
+      const outDate = new Date(checkOutInput.value);
+
+      if (outDate <= inDate) {
+        const adjusted = new Date(inDate);
+        adjusted.setDate(adjusted.getDate() + 1);
+        checkOutInput.value = formatISO(adjusted);
+        calculateAndFilter();
+        return;
+      }
+
+      let weekdays = 0;
+      let weekends = 0;
+      let cur = new Date(inDate);
+
+      while (cur < outDate) {
+        const day = cur.getDay(); // 5 = Jumaat, 6 = Sabtu
+        if (day === 5 || day === 6) {
+          weekends++;
+        } else {
+          weekdays++;
+        }
+        cur.setDate(cur.getDate() + 1);
+      }
+
+      const totalNights = weekdays + weekends;
+      const guests = guestsSelect.value;
+
+      document.getElementById('bookingNightsCount').textContent = `${totalNights} Malam (${weekdays}x Hari Biasa, ${weekends}x Hujung Minggu)`;
+      document.getElementById('rateStatusNotice').textContent = `${guests} Tetamu dipilih • Kadar siap dihitung`;
+
+      // Scroll to rooms catalog smoothly
+      document.getElementById('chalet-rooms').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    checkInInput.addEventListener('change', () => {
+      const inDate = new Date(checkInInput.value);
+      const minOut = new Date(inDate);
+      minOut.setDate(minOut.getDate() + 1);
+      checkOutInput.min = formatISO(minOut);
+      if (new Date(checkOutInput.value) <= inDate) {
+        checkOutInput.value = formatISO(minOut);
+      }
+      calculateAndFilter();
+    });
+
+    checkOutInput.addEventListener('change', calculateAndFilter);
+    guestsSelect.addEventListener('change', calculateAndFilter);
+
+    // Room Category Filter Tabs
+    function setCategoryFilter(category) {
+      const buttons = document.querySelectorAll('.cat-filter-btn');
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-cat') === category) {
+          btn.className = 'cat-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition whitespace-nowrap bg-brand-dark text-white';
+        } else {
+          btn.className = 'cat-filter-btn px-4 py-2 rounded-full text-xs font-semibold transition whitespace-nowrap bg-transparent text-slate-600 hover:text-brand-dark hover:bg-brand-border/40';
+        }
+      });
+
+      const cards = document.querySelectorAll('.room-item');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    }
+
+    // Prepare Instant WhatsApp Booking with exact pricing formula
+    function prepareBooking(roomName, weekdayPrice, weekendPrice, publicHolidayPrice) {
+      const inDate = new Date(checkInInput.value);
+      const outDate = new Date(checkOutInput.value);
+      const guests = guestsSelect.value;
+
+      let weekdays = 0;
+      let weekends = 0;
+      let cur = new Date(inDate);
+
+      while (cur < outDate) {
+        const day = cur.getDay();
+        if (day === 5 || day === 6) {
+          weekends++;
+        } else {
+          weekdays++;
+        }
+        cur.setDate(cur.getDate() + 1);
+      }
+
+      const totalNights = weekdays + weekends;
+      const estimatedCost = (weekdays * weekdayPrice) + (weekends * weekendPrice);
+
+      const msg = `Salam D'Ceria Chalet, saya ingin semak kekosongan & membuat tempahan:%0A%0A` +
+        `🏠 *Pilihan Bilik:* ${encodeURIComponent(roomName)}%0A` +
+        `📅 *Check-In:* ${checkInInput.value}%0A` +
+        `📅 *Check-Out:* ${checkOutInput.value} (${totalNights} malam)%0A` +
+        `👥 *Bilangan Tetamu:* ${guests} orang%0A` +
+        `💵 *Anggaran Kos:* RM${estimatedCost} (${weekdays} mlm Hari Biasa + ${weekends} mlm Hujung Minggu)%0A%0A` +
+        `Adakah bilik masih tersedia pada tarikh berkenaan? Terima kasih!`;
+
+      window.open(`https://wa.me/60196207865?text=${msg}`, '_blank');
+    }
+
+    // Modal Gallery Image Data
+    const roomGalleries = {
+      'cabin': {
+        title: "D'Ceria Cabin Room (Pool View - 12 Units)",
+        url: "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+        caption: "1 Katil Queen, Aircond, TV LED 32″ & Pemandangan Kolam Mandi"
+      },
+      'deluxe': {
+        title: "D'Ceria Deluxe Room Standard (3 Units)",
+        url: "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
+        caption: "1 Katil Queen + 1 Katil Single, Sesuai Untuk Penginapan Keluarga"
+      },
+      'superior': {
+        title: "D'Ceria Superior Room (3 Units - Seaview)",
+        url: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+        caption: "2 Katil Queen, Kapasiti Maksimum Sehingga 5 Dewasa, Arah Pantai Laut"
+      },
+      'deluxe-seaview': {
+        title: "D'Ceria Deluxe Seaview Room (1 Unit Eksklusif)",
+        url: "https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80",
+        caption: "Unit Eksklusif Pemandangan Terus ke Persisiran Pantai Pengkalan Balak"
+      }
+    };
+
+    function openGalleryModal(type) {
+      const data = roomGalleries[type];
+      if (!data) return;
+      document.getElementById('galleryTitle').textContent = data.title;
+      document.getElementById('galleryMainImage').src = data.url;
+      document.getElementById('galleryCaption').textContent = data.caption;
+
+      const modal = document.getElementById('galleryModal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeGalleryModal() {
+      const modal = document.getElementById('galleryModal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    // Close on backdrop click & ESC key
+    document.getElementById('galleryModal').addEventListener('click', (e) => {
+      if (e.target.id === 'galleryModal') closeGalleryModal();
+    });
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeGalleryModal();
+    });
+
+    window.onload = function() {
+      calculateAndFilter();
+    };
+  </script>
+</body>
+</html>
